@@ -16,6 +16,7 @@ class StartupSound
     void tune2();
     void tune3();
     void tune4();
+    void mainBuzz();
   private:
     int _pin;  
     int _pin2;

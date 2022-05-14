@@ -92,3 +92,13 @@ void StartupSound::tune4()
   delay(50);
   noTone(_pin);
 }
+
+void StartupSound::mainBuzz()
+{
+  tone(_pin,4186);
+  digitalWrite(_pin2, HIGH);
+  delay(400);
+  noTone(_pin);
+  digitalWrite(_pin2, LOW);
+  delay(500);
+}
